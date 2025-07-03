@@ -5,6 +5,7 @@ export const Features = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Why Choose Caldwell Boats?
@@ -14,11 +15,12 @@ export const Features = () => {
             and top-quality boats
           </p>
         </div>
+        {/* Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <div key={index} className="flex items-start space-x-4">
-              <div className="flex justify-center rounded-full bg-primary-700 rounded-full w-16 h-16 items-center">
-                <feature.icon className="w-8 h-8 text-blue-600" />
+              <div className="flex justify-center rounded-full bg-primary-600 rounded-full w-16 h-16 items-center">
+                <feature.icon className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">{feature.title}</h3>

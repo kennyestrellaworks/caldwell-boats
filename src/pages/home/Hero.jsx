@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import heroSectionVideo from "../../assets/video/hero-section-video.mp4";
 import { ArrowDown } from "lucide-react";
 
 export const Hero = () => {
@@ -10,7 +9,7 @@ export const Hero = () => {
       <div className="relative h-screen w-full overflow-hidden">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src={heroSectionVideo}
+          src="https://res.cloudinary.com/davjgeymf/video/upload/v1751559900/hero-section-video_gxe7hg.mp4"
           autoPlay
           loop
           muted
@@ -22,7 +21,7 @@ export const Hero = () => {
         <div className="text-center px-4 sm:px-6 lg:px-8 max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
             Unleash the Adventure with
-            <span className="text-accent-400 block">Caldwell Boats</span>
+            <span className="text-accent-500 block">Caldwell Boats</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto animate-slide-up">
             Premium speedboat rentals for unforgettable moments on the water.
