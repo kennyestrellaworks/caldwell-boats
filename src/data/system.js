@@ -6,6 +6,13 @@ export const navLinks = [
   { path: "/speedboats", label: "Speedboats" },
 ];
 
+export const stats = [
+  { number: "5+", label: "Years Experience" },
+  { number: "30+", label: "Premium Speedboats" },
+  { number: "1000+", label: "Happy Customers" },
+  { number: "24/7", label: "Customer Support" },
+];
+
 export const features = [
   {
     icon: Ship,

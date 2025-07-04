@@ -50,7 +50,7 @@ export const Contact = () => {
           <div>
             <div className="mb-8">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Get in <span className="text-primary-600">Touch</span>
+                Get in <span className="text-accent-500">Touch</span>
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Have questions about our speedboats or need help planning your

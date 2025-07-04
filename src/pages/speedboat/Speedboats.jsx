@@ -4,7 +4,7 @@ import { ChevronDown, ArrowDown } from "lucide-react";
 import { speedboats } from "../../data/speedBoats";
 import { useSearchParams } from "react-router-dom";
 import { Contact } from "../home/Contact";
-import { CTA } from "../home/CTA";
+import { CTA } from "../../components/CTA";
 import { useState } from "react";
 import { SpeedBoatCard } from "../../components/SpeedBoatCard";
 

@@ -1,5 +1,5 @@
 import { Contact } from "./Contact";
-import { CTA } from "./CTA";
+import { CTA } from "../../components/CTA";
 import { FeaturedBoats } from "./FeaturedBoats";
 import { Features } from "./Features";
 import { Hero } from "./Hero";

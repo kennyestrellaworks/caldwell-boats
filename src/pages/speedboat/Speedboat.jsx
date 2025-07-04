@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { speedboats } from "../../data/speedBoats";
-import { CTA } from "../home/CTA";
+import { CTA } from "../../components/CTA";
 import { Contact } from "../home/Contact";
 import { Calendar, Gauge, Users, Users2 } from "lucide-react";
 import { BiRuler } from "react-icons/bi";

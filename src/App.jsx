@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import { RootLayout } from "./layout/RootLayout";
 import { NotFound } from "./components/NotFound";
-import { About } from "./pages/About";
+import { About } from "./pages/about/About";
 import { Login } from "./pages/login/Login";
 import { Signup } from "./pages/signup/Signup";
 import { Home } from "./pages/home/Home";

@@ -8,7 +8,7 @@ export const Features = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Caldwell Boats?
+            Why Choose <span className="text-accent-500">Caldwell Boats</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             We provide the best speedboat rental experience with premium service

@@ -31,6 +31,8 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
+        robotoSlab: ["Roboto Slab", "sans-serif"],
+        merriweather: ["Merriweather", "sans-serif"],
       },
       colors: {
         primary: {
