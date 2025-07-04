@@ -28,7 +28,11 @@ export const SpeedBoatCard = ({ boat, isImageLoaded, setIsImageLoaded }) => {
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{boat.name}</h3>
-        <p className="text-gray-600 mb-4 h-[100px]">{boat.description}</p>
+        <p className="text-gray-600 mb-4 h-[100px]">
+          {boat.description.split("\n\n")[0].length > 100
+            ? boat.description.split("\n\n")[0].substring(0, 100) + "..."
+            : boat.description.split("\n\n")[0]}
+        </p>
         <div className="grid grid-cols-2 gap-[10px] mb-4 text-sm text-gray-700">
           <div>
             <span className="font-medium">Length:</span> {boat.length}
@@ -65,7 +69,7 @@ export const SpeedBoatCard = ({ boat, isImageLoaded, setIsImageLoaded }) => {
         </div>
         <div className="flex flex-row gap-2">
           <Link
-            to="speedboats"
+            to={`/speedboats/${boat.id}`}
             className="flex flex-1 items-center justify-center bg-primary-50 hover:bg-primary-600 text-primary-400 hover:text-white py-3 rounded-lg text-sm font-regular transition-colors duration-200"
           >
             <Eye className="h-[16px]" />

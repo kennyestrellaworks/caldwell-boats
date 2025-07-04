@@ -22,8 +22,11 @@ export const speedboats = [
       "Swim Platform",
       "GPS Navigation",
     ],
-    description:
-      "A versatile and powerful jet boat designed for watersports enthusiasts and lake cruising.",
+    description: `The Yamaha 242X is the ultimate fusion of performance and style. Designed for thrill-seekers and watersports enthusiasts, this high-performance speedboat is powered by twin Yamaha marine engines, delivering exhilarating acceleration and agile handling on the water.
+
+With a spacious and luxurious cockpit layout, the 242X comfortably seats up to 12 passengers, making it perfect for family outings, wakeboarding adventures, or coastal cruising.
+
+Its sleek, aerodynamic design is complemented by bold, modern colorways and durable marine-grade upholstery. Whether you're carving waves or relaxing at anchor, the Yamaha 242X offers unmatched versatility, power, and style.`,
     specifications: {
       engine: "Twin 1.8L Yamaha HO Jet Engines",
       fuel: "Premium Gasoline",
@@ -50,8 +53,11 @@ export const speedboats = [
       "https://res.cloudinary.com/davjgeymf/image/upload/v1751534700/Layer_12_sycve4.jpg",
     ],
     features: ["Sound System", "Cooler", "Wakeboard Tower", "GPS Navigation"],
-    description:
-      "A high-performance jet boat known for aggressive styling and sporty handling.",
+    description: `The Scarab 285 ID is a bold, high-performance jet boat built for those who crave speed and precision on the water. Powered by twin Rotax jet engines, it delivers instant throttle response, nimble handling, and impressive acceleration, making it ideal for water sports and adrenaline-fueled cruising.
+
+Inside, the Scarab 285 ID offers a luxurious, spacious cockpit with premium upholstery, versatile seating configurations, and intuitive controls. It features an integrated swim platform, a high-end sound system, and an available touchscreen display, ensuring both comfort and convenience for up to 13 passengers.
+
+Striking exterior lines, bold color accents, and a wakeboard tower give the 285 ID a head-turning presence. Whether you're towing skiers, blasting across open water, or anchored at a quiet cove, the Scarab 285 ID delivers the perfect combination of power, versatility, and modern styling.`,
     specifications: {
       engine: "Twin Rotax 300 HP Jet Engines",
       fuel: "Premium Gasoline",
@@ -83,8 +89,11 @@ export const speedboats = [
       "Trim Tabs",
       "GPS Speedometer",
     ],
-    description:
-      "A legendary offshore racer with unmatched speed and racing pedigree.",
+    description: `The Donzi 38 ZRC is a legendary offshore performance boat, renowned for its blistering speed, razor-sharp handling, and aggressive styling. Engineered for thrill-seekers and competitive racers, this powerhouse features twin high-performance outboard or stern drive engines capable of propelling it to exhilarating top speeds.
+
+The cockpit of the 38 ZRC is built for both performance and comfort, with ergonomically designed bolster seating, race-inspired gauges, and a streamlined dash layout. The deep-V hull design ensures a smooth, confident ride through challenging offshore conditions, giving drivers complete control at high speeds.
+
+With its sleek, aerodynamic silhouette and bold graphics, the Donzi 38 ZRC commands attention at every marina and race event. Perfect for high-speed runs, poker runs, or weekend adventures, it’s a favorite among performance boating enthusiasts seeking adrenaline, precision, and iconic Donzi craftsmanship.`,
     specifications: {
       engine: "Twin Mercury Racing 565",
       fuel: "High-Octane Gasoline",
@@ -116,8 +125,11 @@ export const speedboats = [
       "Insulated Fish Box",
       "Sunshade",
     ],
-    description:
-      "Combines serious offshore fishing capability with blistering speed and luxury amenities.",
+    description: `The Fountain 38 SCX is a masterful blend of cutting-edge performance and luxurious day boating versatility. Powered by triple high-performance outboards, this sport catamaran-inspired center console is designed to deliver jaw-dropping speed, agile handling, and an impressively smooth ride, even in rough offshore waters.
+
+The spacious cockpit offers an ideal layout for both adrenaline-charged runs and leisurely cruising. Premium seating, an advanced digital helm, and a full-featured entertainment system ensure comfort and control, while an integrated hardtop with LED lighting and ample storage make the 38 SCX as practical as it is exhilarating.
+
+With its aggressive, aerodynamic styling and customizable color schemes, the Fountain 38 SCX stands out at every marina and sandbar. It’s the ultimate choice for boaters who demand a perfect balance of race-proven performance, innovative features, and modern luxury in an offshore-ready package.`,
     specifications: {
       engine: "Triple Mercury 400 Verado",
       fuel: "Premium Gasoline",
@@ -149,8 +161,11 @@ export const speedboats = [
       "Race Seats",
       "Sun Deck",
     ],
-    description:
-      "A lightweight, high-speed catamaran built for extreme offshore performance.",
+    description: `The MTI 390X is a cutting-edge performance catamaran built for serious speed enthusiasts and offshore racers. Powered by twin Mercury Racing outboards, this 39-foot cat delivers jaw-dropping acceleration and top-end speeds exceeding 120 mph, while maintaining remarkable stability and precise control.
+
+Inside, the 390X features a purpose-built cockpit designed for both comfort and performance. Bolstered seating, race-inspired digital displays, and intuitive throttle controls give the driver total command of the boat’s impressive capabilities. Passengers enjoy generous legroom, premium upholstery, and a custom stereo system that keeps the energy high during every ride.
+
+Visually striking and unmistakably MTI, the 390X boasts a sleek, aerodynamic hull design and bold graphics that turn heads on every waterway. Perfect for poker runs, offshore races, or high-speed cruising, the MTI 390X blends competition-grade engineering with luxurious craftsmanship for an unforgettable boating experience.`,
     specifications: {
       engine: "Twin Mercury Racing 450R",
       fuel: "Premium Gasoline",
@@ -182,8 +197,11 @@ export const speedboats = [
       "Hydraulic Steering",
       "GPS Speedometer",
     ],
-    description:
-      "High-performance offshore V-bottom known for precision handling and brute power.",
+    description: `The Outerlimits SL 44 is a high-performance V-bottom speedboat that combines brute offshore power with luxury and refinement. Equipped with staggered Mercury Racing engines, this 44-foot powerhouse is capable of reaching speeds well over 120 mph while delivering an exceptionally smooth and stable ride, even in challenging offshore conditions.
+
+Inside, the SL 44 offers an upscale cockpit and cabin layout, designed for both serious racers and leisure boaters alike. The cockpit features bolstered high-back racing seats, precision throttle and trim controls, and advanced digital instrumentation, giving the driver absolute confidence at high speed. Below deck, you'll find a spacious cabin with a wraparound lounge, premium finishes, and a fully appointed wet bar.
+
+Known for its aggressive styling and impeccable craftsmanship, the Outerlimits SL 44 stands out with bold hull graphics, aerodynamic lines, and durable marine-grade upholstery. Whether you're chasing checkered flags in offshore events or enjoying a high-speed coastal run, the SL 44 delivers unrivaled power, luxury, and offshore capability.`,
     specifications: {
       engine: "Twin Mercury Racing 565",
       fuel: "High-Octane Gasoline",
@@ -215,8 +233,11 @@ export const speedboats = [
       "GPS Navigation",
       "Premium Sound System",
     ],
-    description:
-      "Blisteringly fast performance center console loaded with luxury appointments.",
+    description: `The Cigarette Racing 42' Huntress is a luxury performance center console built to deliver both offshore power and sophisticated style. Powered by up to five Mercury Racing outboard engines, this 42-foot beast offers exhilarating speed capabilities while maintaining impressive stability and control in open water conditions.
+
+Designed with versatility in mind, the Huntress features a spacious deck layout with plush seating, an expansive sun lounge, and a fully equipped helm station with state-of-the-art navigation and entertainment systems. The boat also offers a comfortable cabin below deck, complete with a berth, air conditioning, and a private head, making it perfect for overnight getaways or long-distance coastal cruising.
+
+Finished with bold, aerodynamic lines and premium marine-grade upholstery, the 42' Huntress turns heads at every dock and on every waterway. Whether you're chasing offshore adventure, entertaining guests, or simply enjoying a day on the water in unmatched comfort and performance, the Cigarette Racing 42' Huntress is engineered to exceed expectations.`,
     specifications: {
       engine: "Quad Mercury 450R Racing",
       fuel: "Premium Gasoline",
@@ -248,8 +269,11 @@ export const speedboats = [
       "GPS Navigation",
       "Swim Platform",
     ],
-    description:
-      "A premium bowrider blending comfort, open seating and high-speed capability.",
+    description: `The Formula 350 CBR (Crossover Bowrider) seamlessly blends the versatility of an open bow day boat with the comforts of a full-featured cruiser. Powered by twin or triple Mercury or Volvo Penta engines, this 35-foot vessel delivers smooth, confident performance whether you’re slicing through open water or enjoying a leisurely sunset cruise.
+
+The expansive cockpit and open bow seating areas offer generous space for entertaining, complete with wraparound lounges, a wet bar, and convertible sun pads. Below deck, the 350 CBR surprises with a fully appointed cabin featuring a forward berth, modern galley, air conditioning, and an enclosed head — ideal for overnight escapes or quick retreats from the sun.
+
+Sleek, contemporary lines paired with premium marine upholstery and high-gloss cabinetry give the Formula 350 CBR a sophisticated, modern presence. Designed for boaters who demand both style and substance, this crossover offers the perfect balance of day boating excitement and cruiser-level luxury.`,
     specifications: {
       engine: "Twin MerCruiser 8.2 MAG",
       fuel: "Premium Gasoline",
@@ -276,8 +300,11 @@ export const speedboats = [
       "https://res.cloudinary.com/davjgeymf/image/upload/v1751533326/Layer_50_du77qw.jpg",
     ],
     features: ["GPS Navigation", "Sun Deck", "Sound System", "Swim Platform"],
-    description:
-      "Sleek Scandinavian design meets sporty handling in this agile center console.",
+    description: `The Axopar 28 T-Top is a dynamic, adventure-ready sport boat designed for boaters who demand versatility, performance, and Scandinavian styling. Powered by a single or twin outboard setup, this 28-foot vessel is known for its agile handling, efficient ride, and ability to confidently tackle a wide range of water conditions.
+
+The distinctive T-Top configuration provides ample shade for the cockpit while maintaining an open, airy feel. The deck layout is intelligently arranged with modular seating, a spacious bow sunbed, and practical storage solutions throughout. Optional features like a wet bar, forward cabin with a berth, and a marine toilet expand its functionality, making it ideal for both daytime excursions and overnight stays.
+
+With its sharp, contemporary profile and rugged good looks, the Axopar 28 T-Top turns heads at every marina. Whether you’re chasing offshore fishing grounds, hosting friends for coastal cruising, or exploring hidden coves, this sport boat delivers impressive comfort, smart features, and reliable performance to suit any on-water adventure.`,
     specifications: {
       engine: "Single Mercury Verado 400",
       fuel: "Premium Gasoline",
@@ -309,8 +336,11 @@ export const speedboats = [
       "Premium Seating",
       "GPS Navigation",
     ],
-    description:
-      "A large bowrider with luxury appointments, plenty of power, and entertainment features.",
+    description: `The Sea Ray SLX 350 is a luxury dayboat engineered to deliver sophisticated style, powerful performance, and premium comfort on the water. Powered by twin MerCruiser sterndrive engines, it offers exhilarating acceleration, precise handling, and a remarkably smooth ride, whether you're cruising along the coast or anchoring in a secluded cove.
+
+The spacious cockpit features plush wraparound seating, a fully equipped wet bar, and a convertible sunpad, creating an inviting space for socializing, dining, or relaxing under the sun. An advanced digital helm with intuitive touch-screen controls puts navigation and entertainment at your fingertips, while the integrated swim platform with an optional submersible step makes water access effortless.
+
+Designed with modern luxury in mind, the SLX 350 combines bold, elegant lines with refined detailing throughout. Premium marine upholstery, customizable color schemes, and ambient LED lighting enhance the onboard experience, making every outing a memorable escape. Ideal for hosting family and friends, this sport boat delivers a perfect blend of performance, versatility, and upscale leisure.`,
     specifications: {
       engine: "Twin MerCruiser 6.2L",
       fuel: "Premium Gasoline",
@@ -337,8 +367,12 @@ export const speedboats = [
       "https://res.cloudinary.com/davjgeymf/image/upload/v1751533027/Layer_59_fcxyud.jpg",
     ],
     features: ["GPS Navigation", "Sound System", "Cooler", "Sunshade"],
-    description:
-      "A powerful sport boat with a deep-V hull and upscale amenities for fun days on the water.",
+    description: `The Chaparral 287 SSX is a premium sport bowrider that masterfully blends performance, luxury, and versatility for boaters seeking high-end comfort and thrilling on-water experiences. Powered by a range of robust inboard or sterndrive engine options, the 287 SSX delivers confident acceleration, smooth handling, and a stable, dry ride in a variety of conditions.
+
+Its spacious cockpit layout features plush, diamond-stitched seating, a full-service wet bar, and an advanced digital helm with dual touch-screen displays for navigation, audio, and system controls. A generous bow seating area, convertible sun loungers, and an integrated swim platform with a telescoping ladder make the 287 SSX ideal for sun-soaked leisure and water sports adventures.
+
+Sporting sleek, contemporary lines and bold color accents, the Chaparral 287 SSX stands out at every dock. Thoughtful design touches like stainless steel hardware, LED lighting, and ample storage elevate the onboard experience, offering a perfect balance of sophistication, functionality, and exhilarating performance for family outings or lively so
+`,
     specifications: {
       engine: "Volvo Penta V8 380",
       fuel: "Premium Gasoline",
@@ -370,8 +404,11 @@ export const speedboats = [
       "GPS Navigation",
       "Premium Seating",
     ],
-    description:
-      "A rugged, versatile dual-console boat built for offshore fishing and luxury cruising.",
+    description: `The Boston Whaler 320 Vantage is a versatile dual-console boat built to handle everything from offshore fishing excursions to family day cruising with ease. Powered by twin Mercury outboard engines, it delivers impressive speed, smooth handling, and reliable performance in both calm and rough conditions, living up to Boston Whaler’s reputation for unsinkable design and rugged durability.
+
+On deck, the 320 Vantage features a highly adaptable cockpit with convertible seating, a spacious bow lounge, and a portside companion seat that transforms into multiple seating and lounging configurations. Anglers will appreciate the integrated livewell, fish boxes, and ample rod storage, while families and guests enjoy a well-appointed wet bar, a retractable sunshade, and a roomy enclosed head for added convenience.
+
+The boat’s modern styling is matched by premium fit and finish throughout, with stainless steel accents, marine-grade upholstery, and thoughtful storage solutions. Whether you’re chasing trophy fish offshore, anchoring for a sunset picnic, or enjoying water sports with friends, the Boston Whaler 320 Vantage delivers confidence, comfort, and versatility in every adventure.`,
     specifications: {
       engine: "Twin Mercury Verado 350",
       fuel: "Premium Gasoline",
@@ -403,8 +440,11 @@ export const speedboats = [
       "GPS Navigation",
       "Sunshade",
     ],
-    description:
-      "A high-performance center console offering speed and luxury with serious offshore capability.",
+    description: `The Nor-Tech 340 Sport is a high-performance center console that seamlessly combines speed, style, and versatility. Equipped with powerful triple Mercury outboard engines, this boat offers blistering acceleration and smooth, confident handling, making it ideal for offshore runs, sandbar parties, and weekend cruises alike.
+
+Designed with both performance enthusiasts and casual boaters in mind, the 340 Sport features a spacious, open deck layout with plush, diamond-stitched seating and a fully equipped helm station with advanced digital controls and navigation displays. A roomy forward lounge and wraparound bow seating offer ample space for relaxing, while integrated storage compartments keep gear organized and accessible.
+
+Built with Nor-Tech’s signature sleek styling and attention to detail, the 340 Sport includes a custom sound system, a deluxe wet bar, and optional fishing amenities like rod holders and livewells. Whether you’re chasing adventure at top speed or cruising comfortably with family and friends, the Nor-Tech 340 Sport delivers uncompromising luxury and performance on the water.`,
     specifications: {
       engine: "Triple Mercury 450R",
       fuel: "Premium Gasoline",
@@ -436,8 +476,11 @@ export const speedboats = [
       "Premium Seating",
       "Sound System",
     ],
-    description:
-      "A top-rated performance open center console ideal for offshore fishing and high-speed cruising.",
+    description: `The Midnight Express 34 Open is a beautifully engineered, high-performance center console designed for thrill-seekers and leisure cruisers alike. Powered by twin or triple outboard engines, it offers blistering top-end speeds combined with a stable, confident ride, perfect for offshore adventures and coastal runs.
+
+Its open deck layout is intelligently designed to maximize space and versatility, featuring generous seating, a luxurious forward sun lounge, and a well-appointed helm with state-of-the-art navigation and control systems. The boat also includes a spacious console cabin equipped with a freshwater head and storage, making it suitable for extended day trips and overnight getaways.
+
+Sleek lines and bold custom finishes give the 34 Open its signature presence on the water. With premium marine-grade upholstery, integrated LED lighting, and an optional top-tier audio system, this vessel delivers an unmatched blend of performance, comfort, and striking modern style, making it a favorite among discerning boaters.`,
     specifications: {
       engine: "Triple Mercury Verado 400",
       fuel: "Premium Gasoline",
@@ -469,8 +512,11 @@ export const speedboats = [
       "GPS Navigation",
       "Bluetooth Audio",
     ],
-    description:
-      "Classic high-speed offshore V-bottom boat with race styling and serious power.",
+    description: `The Performance Offshore is a high-speed luxury powerboat crafted for adrenaline-fueled offshore runs and refined leisure cruising. Its powerful twin or triple engine setup delivers exhilarating acceleration, razor-sharp handling, and the ability to confidently navigate choppy waters at impressive speeds.
+
+Designed with both performance and comfort in mind, the Performance Offshore features a sleek, aerodynamic profile and a thoughtfully arranged cockpit. The spacious deck layout includes premium seating, a wraparound sun lounge, and an ergonomic helm equipped with advanced digital controls and navigation displays. Below deck, a compact yet inviting cabin offers a relaxing retreat with a freshwater head and lounge area.
+
+Built with precision engineering and bold styling, the Performance Offshore showcases premium marine-grade finishes, customizable color schemes, and integrated audio and lighting systems. It’s the perfect vessel for those who demand both speed and sophistication on open waters, whether chasing the horizon or hosting sunset gatherings at anchor.`,
     specifications: {
       engine: "Twin Mercury Racing 520 EFI",
       fuel: "High-Octane Gasoline",
@@ -502,8 +548,11 @@ export const speedboats = [
       "GPS Navigation",
       "Premium Sound System",
     ],
-    description:
-      "An upscale open sport boat offering luxury accommodations and serious performance.",
+    description: `The Intrepid 345 Valor is a versatile, high-performance center console that perfectly balances offshore capability with luxury cruising amenities. Designed for serious anglers and recreational boaters alike, it features a powerful twin or triple engine configuration, delivering speed, stability, and fuel efficiency for everything from deep-sea fishing trips to family outings.
+
+Its thoughtfully designed cockpit boasts ample seating, an integrated hardtop, and a spacious forward lounge area for relaxing or socializing. The helm is outfitted with cutting-edge electronics, intuitive controls, and premium materials, offering a comfortable, commanding experience for captains. Below deck, a surprisingly roomy cabin includes a convertible V-berth, enclosed head with a shower, and galley conveniences for extended trips.
+
+Built with Intrepid’s renowned craftsmanship and attention to detail, the 345 Valor offers customizable options, from upholstery and lighting to fishing packages and entertainment upgrades. This boat blends performance, comfort, and style into one capable, adventure-ready package for boaters who demand versatility without compromise.`,
     specifications: {
       engine: "Triple Yamaha 300",
       fuel: "Premium Gasoline",
@@ -535,8 +584,11 @@ export const speedboats = [
       "GPS Navigation",
       "Bluetooth Audio",
     ],
-    description:
-      "A rugged, versatile center console designed for hardcore fishing and weekend cruising.",
+    description: `The Wellcraft 302 Fisherman is a serious offshore center console built for anglers who demand capability, speed, and modern comforts. Powered by twin outboard engines, it delivers impressive performance and handling in a variety of sea conditions, making it equally suited for deep-sea fishing expeditions or coastal family cruising.
+
+Its fishing-focused layout includes an expansive aft cockpit with a large livewell, multiple in-floor fish boxes, and ample rod storage throughout. The integrated T-top provides shade and houses additional rod holders and optional electronics, while the leaning post features tackle storage and a freshwater sink. Forward, a spacious bow lounge with wraparound seating offers a perfect spot to relax when not chasing fish.
+
+Blending rugged utility with upscale details, the Wellcraft 302 Fisherman includes premium upholstery, modern helm instrumentation, and an enclosed head compartment for added convenience. This versatile sport fishing boat is purpose-built for those who appreciate both the thrill of the hunt and the pleasure of a well-appointed day on the water.`,
     specifications: {
       engine: "Twin Mercury 300 Verado",
       fuel: "Premium Gasoline",
@@ -568,8 +620,11 @@ export const speedboats = [
       "Sound System",
       "GPS Navigation",
     ],
-    description:
-      "A classic performance V-bottom built for speed lovers and offshore racing enthusiasts.",
+    description: `The Velocity Powerboats VR1 290 is a sleek, performance-driven sport boat built for enthusiasts who crave speed and agility on the water. With its signature deep-V hull design and lightweight construction, the VR1 290 delivers exhilarating acceleration, razor-sharp handling, and a dry, stable ride even in choppy conditions.
+
+This 29-foot performance boat is powered by a single or twin engine configuration, offering customizable options to suit a range of boating styles — from spirited weekend cruising to competitive poker runs. The cockpit layout includes bolster-style helm and passenger seats, a well-organized dashboard with high-performance gauges, and a spacious rear bench for passengers to ride comfortably at high speeds.
+
+Beyond its racing pedigree, the VR1 290 balances performance with convenience, featuring a small cuddy cabin ideal for stowing gear or taking a break between runs. Bold graphics, quality upholstery, and polished stainless-steel hardware give this boat an unmistakable presence at any dock or marina. It’s a classic Velocity — fast, sharp, and built to thrill.`,
     specifications: {
       engine: "Single Mercury 565",
       fuel: "Premium Gasoline",
@@ -601,8 +656,11 @@ export const speedboats = [
       "Insulated Fish Box",
       "GPS Navigation",
     ],
-    description:
-      "An offshore center console built for hardcore anglers and open-water adventures.",
+    description: `The SeaVee 340Z is a premium offshore center console built for serious anglers and boating enthusiasts who demand uncompromising performance, fishability, and modern versatility. Featuring SeaVee’s renowned twin-stepped Z-hull design, this 34-foot boat delivers superior speed, fuel efficiency, and a remarkably stable, dry ride even in rough offshore conditions.
+
+Designed with the hardcore fisherman in mind, the 340Z boasts an expansive, uncluttered cockpit with multiple in-deck fish boxes, insulated livewells, and ample rod storage. The optional second helm station and integrated T-top provide additional functionality for both offshore runs and relaxed coastal cruises. With a customizable layout, owners can configure the boat with options like forward seating, dive doors, and high-capacity bait systems to suit their unique needs.
+
+While the 340Z is built for battle on the water, it doesn’t sacrifice comfort. Plush seating, premium upholstery, and a well-appointed console with advanced electronics create a refined boating experience. Whether targeting big game offshore or enjoying a family sandbar outing, the SeaVee 340Z blends professional-grade fishing features with the amenities of a luxury center console.`,
     specifications: {
       engine: "Triple Mercury 350 Verado",
       fuel: "Premium Gasoline",
@@ -629,8 +687,12 @@ export const speedboats = [
       "https://res.cloudinary.com/davjgeymf/image/upload/v1751531768/Layer_104_fxaluv.jpg",
     ],
     features: ["GPS Navigation", "Sun Deck", "Cooler", "Premium Seating"],
-    description:
-      "A sporty and reliable open center console with offshore power and family-friendly features.",
+    description: `The Sonic 32 CC is a versatile high-performance center console built for boaters who demand both speed and adaptability. With its sleek, aggressive lines and twin-step hull design, this 32-foot model delivers thrilling top-end performance while maintaining impressive stability and control in offshore conditions.
+
+Designed to suit a variety of on-water activities, the 32 CC features a spacious open deck layout perfect for fishing, diving, or cruising with friends and family. Multiple in-deck storage compartments, an insulated fish box, and an integrated livewell cater to anglers, while generous seating, premium upholstery, and a wraparound console windshield enhance passenger comfort.
+
+Advanced electronics, intuitive helm controls, and customizable options like T-top configurations, sound systems, and color schemes allow owners to tailor the Sonic 32 CC to their exact preferences. Whether chasing trophy fish offshore or enjoying a sunset run along the coast, the Sonic 32 CC offers an id
+`,
     specifications: {
       engine: "Twin Mercury 350 Verado",
       fuel: "Premium Gasoline",
@@ -662,8 +724,12 @@ export const speedboats = [
       "GPS Navigation",
       "Hydraulic Steering",
     ],
-    description:
-      "A fast and agile bowrider designed for high-speed lake and coastal fun.",
+    description: `The Checkmate Pulsare 2400 BRX is a bold, high-performance bowrider designed for thrill-seekers and families alike. Known for its sleek, race-inspired profile and precision hull engineering, this 24-foot speedboat delivers exhilarating top speeds with smooth, confident handling across both calm waters and open bays.
+
+Inside, the Pulsare 2400 BRX offers a spacious, open bow layout with plush seating, premium marine upholstery, and thoughtful storage throughout. The cockpit is equipped with adjustable bucket seats, a well-designed helm with modern instrumentation, and a performance-style steering wheel that puts total control at the driver’s fingertips.
+
+Blending classic Checkmate styling with modern upgrades, the 2400 BRX features vibrant gelcoat finishes, optional wakeboard towers, and an integrated swim platform for easy water access. Whether cruising with family, pulling a skier, or racing across glassy lakes, the Checkmate Pulsare 2400 BRX offers excitement, comfort, and
+`,
     specifications: {
       engine: "Single Mercury 300 Verado",
       fuel: "Premium Gasoline",
@@ -695,8 +761,11 @@ export const speedboats = [
       "Sound System",
       "GPS Navigation",
     ],
-    description:
-      "An ultra-fast offshore V-bottom with aggressive styling and blistering top-end speed.",
+    description: `The Performance Powerboats P-33 is a high-performance offshore powerboat crafted for speed enthusiasts and competitive racers. With its aggressive, aerodynamic lines and proven stepped-hull design, the P-33 cuts through waves with precision, offering both thrilling acceleration and remarkable stability in open water.
+
+Designed for both comfort and function, the cockpit layout features race-bolstered seating, ergonomic controls, and a sleek, modern dashboard with full digital instrumentation. The spacious cabin below provides convenient amenities for extended runs, including a V-berth, storage compartments, and optional entertainment features.
+
+Built to withstand the rigors of offshore racing, the P-33 incorporates lightweight composite materials, premium hardware, and customizable engine packages capable of pushing speeds beyond 100 mph. Whether you're chasing checkered flags or enjoying adrenaline-fueled weekend runs, the Performance Powerboats P-33 delivers world-class performance and unmistakable presence on the water.`,
     specifications: {
       engine: "Twin Mercury Racing 520 EFI",
       fuel: "High-Octane Gasoline",
@@ -728,8 +797,11 @@ export const speedboats = [
       "Premium Sound System",
       "GPS Navigation",
     ],
-    description:
-      "A high-speed performance cat built for open-water acceleration and handling.",
+    description: `The Eliminator 28 Speedster is a head-turning performance catamaran designed for those who crave speed, style, and precision handling. Its twin-sponson hull configuration provides exceptional stability and effortless planing, making it one of the most exhilarating rides in its class. With a sleek, aerodynamic profile and bold custom graphics, the 28 Speedster commands attention whether docked or wide open on the water.
+
+Inside, the cockpit is designed for both driver and passengers to experience maximum comfort at high speeds. It features sculpted high-back bucket seats, premium marine upholstery, and a full digital dash with performance readouts. The layout accommodates up to six passengers, offering a balance of luxury finishes and race-inspired functionality.
+
+Powered by twin high-performance outboard or stern-drive engine options, the Eliminator 28 Speedster delivers blistering top-end speeds while maintaining superb cornering and wave-cutting capabilities. Perfect for poker runs, offshore sprints, or weekend blasts across the lake, it stands as a modern icon in the world of custom performance powerboats.`,
     specifications: {
       engine: "Twin Mercury Racing 450R",
       fuel: "High-Octane Gasoline",
@@ -761,8 +833,11 @@ export const speedboats = [
       "Race Seats",
       "Bluetooth Audio",
     ],
-    description:
-      "A lightweight cat built for offshore top speed and extreme acceleration.",
+    description: `The Spectre 32 Cat is a purpose-built performance catamaran designed for adrenaline seekers and offshore enthusiasts. With its twin-sponson tunnel hull, the 32 Cat effortlessly slices through rough water while maintaining incredible stability and control at high speeds. Its aggressive, aerodynamic styling and striking color schemes make it a standout on any waterway.
+
+Inside the spacious cockpit, the Spectre 32 Cat offers race-inspired bucket seating for four, a wraparound windscreen, and a custom-molded dash equipped with digital instrumentation and performance controls. The layout is optimized for both comfort and function, providing an exhilarating experience whether you're cruising coastal runs or chasing top speeds in offshore poker runs.
+
+Equipped with twin outboards or high-output stern drives, the Spectre 32 Cat is capable of achieving blistering top speeds while delivering precise, responsive handling. Its advanced hull design ensures minimal drag and efficient lift, making it one of the most sought-after performance cats in its class for seasoned drivers and speedboat enthusiasts alike.`,
     specifications: {
       engine: "Twin Mercury Racing 450R",
       fuel: "High-Octane Gasoline",
@@ -794,8 +869,11 @@ export const speedboats = [
       "GPS Navigation",
       "Sun Deck",
     ],
-    description:
-      "Combines sport boat performance with bowrider luxury for family and friends.",
+    description: `The Formula 330 Crossover is a sophisticated blend of luxury, performance, and versatility, designed for boaters who demand more from their time on the water. Its sleek, modern lines and bold hull graphics command attention, while the deep-V hull ensures a smooth, confident ride across a variety of conditions.
+
+The cockpit layout of the 330 Crossover is spacious and intelligently arranged, featuring plush, wraparound seating, a convertible sun lounge, and an ergonomically designed helm station equipped with the latest navigation technology. An integrated wet bar and premium sound system make it perfect for entertaining family and friends during day cruises or sunset gatherings.
+
+Below deck, the 330 Crossover surprises with a fully appointed cabin offering a cozy lounge, sleeping accommodations, a compact galley, and an enclosed head. Combining day boat utility with overnight comfort, the Formula 330 Crossover is ideal for both spirited adventures and relaxing weekend getaways on the water.`,
     specifications: {
       engine: "Twin MerCruiser 8.2 MAG",
       fuel: "Premium Gasoline",
@@ -827,8 +905,11 @@ export const speedboats = [
       "Seakeeper Stabilizer",
       "GPS Navigation",
     ],
-    description:
-      "A performance center console blending offshore power and high-end luxury.",
+    description: `The Nor-Tech 390 Sport is a premium high-performance center console designed for boaters who crave speed, luxury, and versatility. With its sleek, aggressive lines and bold presence, this 39-foot powerhouse is built for those who want to turn heads on the water while experiencing class-leading performance.
+
+The spacious deck layout of the 390 Sport offers generous wraparound seating, an expansive aft lounge, and a forward sun pad, making it perfect for entertaining, offshore fishing, or high-speed coastal cruising. The helm is equipped with state-of-the-art navigation systems, digital controls, and an advanced audio setup, ensuring both comfort and control at any speed.
+
+Powered by multiple high-output outboard engines, the Nor-Tech 390 Sport delivers blistering top speeds with smooth, stable handling even in challenging sea conditions. Its deep-V hull design ensures a soft, dry ride, while premium marine upholstery and top-tier finishes elevate the onboard experience, blending performance and luxury into one unforgettable package.`,
     specifications: {
       engine: "Quad Mercury Racing 450R",
       fuel: "Premium Gasoline",
@@ -860,8 +941,11 @@ export const speedboats = [
       "GPS Navigation",
       "Bluetooth Audio",
     ],
-    description:
-      "A rugged and versatile high-speed center console for offshore fishing and island hopping.",
+    description: `The Sonic 36 CC is a high-performance center console speedboat designed for offshore enthusiasts who value speed, agility, and versatility. Its sharp, aerodynamic profile and powerful stance make it an eye-catching vessel on any body of water, from calm bays to open seas.
+
+Built for both sport and leisure, the 36 CC offers a spacious, well-appointed deck layout with ample seating, a forward sun lounge, and a fully equipped helm featuring advanced navigation and control systems. The boat’s design ensures an efficient, smooth ride, providing both thrill and comfort for fishing trips, high-speed runs, or family outings.
+
+Powered by twin or triple outboard engines, the Sonic 36 CC boasts impressive acceleration and top speeds while maintaining stability and responsive handling in various sea conditions. Premium marine-grade finishes, storage solutions, and an integrated sound system round out its luxurious and practical features, making it a favorite for boaters seeking a bold, versatile offshore performer.`,
     specifications: {
       engine: "Triple Mercury Verado 350",
       fuel: "Premium Gasoline",
@@ -893,8 +977,11 @@ export const speedboats = [
       "GPS Speedometer",
       "Hydraulic Steering",
     ],
-    description:
-      "A high-speed, hardcore V-bottom built for racing enthusiasts.",
+    description: `The Outerlimits SV 29 is a high-performance offshore V-bottom speedboat crafted for thrill-seekers who demand precision handling and blistering top speeds. With its aggressive, aerodynamic profile and race-inspired design, the SV 29 stands out as a purebred performance machine on the water.
+
+Its cockpit is designed with both driver and passenger comfort in mind, featuring bolstered seating, a custom dash with advanced instrumentation, and premium marine finishes throughout. The boat’s deep-V hull design ensures a smooth, stable ride even in choppy offshore conditions, making it ideal for poker runs, offshore racing, or high-speed coastal cruising.
+
+Powered by a single, high-output engine — typically a Mercury Racing powerhouse — the Outerlimits SV 29 delivers incredible acceleration and reliable top-end speed. Built with meticulous attention to detail and uncompromising craftsmanship, it offers both performance enthusiasts and collectors a sleek, exhilarating ride coupled with unmatched build quality and timeless Outerlimits style.`,
     specifications: {
       engine: "Single Mercury Racing 565",
       fuel: "High-Octane Gasoline",
@@ -926,8 +1013,11 @@ export const speedboats = [
       "GPS Navigation",
       "Premium Seating",
     ],
-    description:
-      "A performance fishing center console with serious offshore capability.",
+    description: `The Fountain 34 TE (Tournament Edition) is a serious offshore center console designed for anglers and performance enthusiasts alike. Renowned for its sleek, aggressive styling and proven deep-V hull, the 34 TE cuts through rough water with ease while offering remarkable speed, stability, and control.
+
+Built for both sport fishing and leisure cruising, the Fountain 34 TE features an open, spacious deck layout with plenty of rod holders, insulated fish boxes, and a large livewell. The helm is equipped with modern electronics, premium finishes, and triple helm seats, providing comfort and functionality whether you’re chasing trophy fish offshore or cruising with family and friends.
+
+Powered by twin or triple outboard engines, the 34 TE offers exceptional acceleration and top-end performance, making it one of the fastest center consoles in its class. Premium upholstery, ample storage, and a forward sunpad round out this versatile package, offering the perfect balance of hardcore fishing capability and high-performance fun.`,
     specifications: {
       engine: "Triple Mercury 400 Verado",
       fuel: "Premium Gasoline",
@@ -954,8 +1044,11 @@ export const speedboats = [
       "https://res.cloudinary.com/davjgeymf/image/upload/v1751530190/97594537jynfwfgm_ddy9fl.jpg",
     ],
     features: ["Sound System", "Swim Platform", "GPS Navigation", "Sun Deck"],
-    description:
-      "A classic, sporty bowrider built for high-speed runs and watersports fun.",
+    description: `The Baja 278 Islander is a bold and stylish performance boat designed for those who crave speed, comfort, and open-water adventure. With its signature sleek lines and aggressive stance, this bowrider combines high-performance capability with family-friendly features, making it an ideal choice for both thrill-seekers and casual cruisers.
+
+The spacious cockpit and open bow seating area provide comfortable accommodations for up to 10 passengers, complete with plush marine-grade upholstery, integrated cup holders, and ample storage for gear and water toys. The 278 Islander’s ergonomic helm features modern gauges and controls, giving the captain precise command whether navigating calm bays or slicing through offshore waves.
+
+Powered by a powerful single or twin engine configuration, the Baja 278 Islander delivers impressive top speeds and nimble handling. Its deep-V hull ensures a smooth, dry ride, while the integrated swim platform and ladder make water access easy for swimming, snorkeling, or watersports. It’s the perfect balance of speedboat excitement and weekend versatility.`,
     specifications: {
       engine: "Single MerCruiser 496 MAG HO",
       fuel: "Premium Gasoline",

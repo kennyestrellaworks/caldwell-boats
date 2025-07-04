@@ -7,10 +7,11 @@ import {
 import { RootLayout } from "./layout/RootLayout";
 import { NotFound } from "./components/NotFound";
 import { About } from "./pages/About";
-import { Login } from "./pages/Login";
-import { Signup } from "./pages/Signup";
+import { Login } from "./pages/login/Login";
+import { Signup } from "./pages/signup/Signup";
 import { Home } from "./pages/home/Home";
 import { Speedboats } from "./pages/speedboat/Speedboats";
+import { Speedboat } from "./pages/speedboat/Speedboat";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="speedboats" element={<Speedboats />} />
+      <Route path="speedboats/:id" element={<Speedboat />} />
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<Signup />} />
       <Route path="*" element={<NotFound />} />

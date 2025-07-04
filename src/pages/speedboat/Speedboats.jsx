@@ -24,7 +24,7 @@ export const Speedboats = () => {
   // console.log("typeFilterParams", typeFilterParams);
 
   const boatTypes = [...new Set(speedboats.map((boat) => boat.type))];
-  // console.log("boatTypes", boatTypes);
+  console.log("boatTypes", boatTypes);
 
   // Search input
   const handleSearchChange = (value) => {
@@ -41,7 +41,7 @@ export const Speedboats = () => {
   // Type select
   const handleTypeFilter = (value) => {
     const newParams = new URLSearchParams(searchParams);
-    console.log("value handleTypeFilter", value);
+    // console.log("value handleTypeFilter", value);
 
     if (value !== "select type") {
       newParams.set("type", value);
@@ -54,7 +54,7 @@ export const Speedboats = () => {
   // Sort select
   const handleSortFilter = (value) => {
     const newParams = new URLSearchParams(searchParams);
-    console.log("value handleSortFilter", value);
+    // console.log("value handleSortFilter", value);
 
     if (value !== "sort") {
       newParams.set("sort", value);
@@ -171,7 +171,7 @@ export const Speedboats = () => {
                     <option value="select type">Select Type</option>
                     {boatTypes.map((item, index) => {
                       return (
-                        <option key={index} value={item}>
+                        <option key={index} value={item.toLowerCase()}>
                           {item}
                         </option>
                       );
