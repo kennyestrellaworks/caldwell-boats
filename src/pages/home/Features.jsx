@@ -16,10 +16,10 @@ export const Features = () => {
           </p>
         </div>
         {/* Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem]">
           {features.map((feature, index) => (
             <div key={index} className="flex items-start space-x-4">
-              <div className="flex justify-center rounded-full bg-primary-600 rounded-full w-16 h-16 items-center">
+              <div className="flex justify-center rounded-full bg-primary-600 w-16 h-16 items-center">
                 <feature.icon className="w-8 h-8 text-white" />
               </div>
               <div>

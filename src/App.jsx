@@ -7,10 +7,10 @@ import {
 import { RootLayout } from "./layout/RootLayout";
 import { NotFound } from "./components/NotFound";
 import { About } from "./pages/About";
-import { Speedboats } from "./pages/Speedboats";
 import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup";
 import { Home } from "./pages/home/Home";
+import { Speedboats } from "./pages/speedboat/Speedboats";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -9,8 +9,8 @@ export const Navbar = () => {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
 
-  console.log("location", location);
-  console.log("navLinks", navLinks);
+  // console.log("location", location);
+  // console.log("navLinks", navLinks);
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">

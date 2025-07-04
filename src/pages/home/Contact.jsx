@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
+import { FaPaperPlane } from "react-icons/fa";
 
 export const Contact = () => {
   const [contactForm, setContactForm] = useState({
@@ -269,20 +270,8 @@ export const Contact = () => {
                   </>
                 ) : (
                   <>
+                    <FaPaperPlane />
                     <span>Send Message</span>
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                      />
-                    </svg>
                   </>
                 )}
               </button>
