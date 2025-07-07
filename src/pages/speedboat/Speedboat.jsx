@@ -85,7 +85,7 @@ export const Speedboat = () => {
                 />
               </div>
             </div>
-            <div className="flex w-full md3:w-[40%]">
+            <div className="flex w-full md3:w-[40%] ">
               <div className="w-full grid grid-cols-2 gap-2 sm1:grid-cols-4 md:grid-cols-2">
                 {boat.gallery.slice(1).map((image, index) => (
                   <div
@@ -130,11 +130,11 @@ export const Speedboat = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col gap-8 mt-10">
+            <div className="flex flex-col gap-8 mt-[4rem]">
               {/* Specifications */}
               <div className="flex flex-col">
                 <div className="flex w-full items-start">
-                  <div className="grid grid-cols-2 gap-6 items-start w-full">
+                  <div className="grid grid-cols-2 gap-6 items-start w-full md5:grid-cols-4">
                     <div className="flex gap-3">
                       <div className="bg-accent-100 rounded-full w-12 h-12 flex items-center justify-center mb-2">
                         <BiRuler className="h-6 w-6 text-accent-600" />
