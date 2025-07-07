@@ -28,18 +28,22 @@ export const Hero = () => {
             Book your ride today and chase the horizon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
-            <Link
-              to="speedboats"
-              className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-lg text-lg font-regular transition-all duration-300 hover:scale-105"
-            >
-              Explore Fleet
-            </Link>
-            <Link
-              to="signup"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-900 text-white px-8 py-4 rounded-lg text-lg font-regular transition-all duration-300"
-            >
-              Signup
-            </Link>
+            <div className="flex justify-center">
+              <Link
+                to="speedboats"
+                className="inline-flex text-center bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-lg text-lg font-regular transition-all duration-300 hover:scale-105"
+              >
+                Explore Fleet
+              </Link>
+            </div>
+            <div className="flex justify-center">
+              <Link
+                to="signup"
+                className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-900 text-white px-8 py-4 rounded-lg text-lg font-regular transition-all duration-300"
+              >
+                Signup
+              </Link>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle">

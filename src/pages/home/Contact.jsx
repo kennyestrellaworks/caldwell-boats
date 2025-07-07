@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { ChevronDown, Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 
@@ -43,7 +43,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white sm:px-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Contact Info */}
@@ -59,8 +59,8 @@ export const Contact = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
+            <div className="space-y-6 flex flex-col md:flex-row md:space-y-0 md1:gap-4 md7:flex-col">
+              <div className="flex items-start space-x-4 md1:flex-1">
                 <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
                   <Phone className="text-primary-500" />
                 </div>
@@ -80,7 +80,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 md1:flex-1">
                 <div className="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
                   <Mail className="text-accent-500" />
                 </div>
@@ -98,7 +98,7 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 md1:flex-1">
                 <div className="flex-shrink-0 w-12 h-12 bg-ocean-100 rounded-lg flex items-center justify-center">
                   <MapPin className="text-ocean-500" />
                 </div>
@@ -161,13 +161,13 @@ export const Contact = () => {
                     Full Name *
                   </label>
                   <input
-                    type="text"
+                    type="name"
                     name="name"
                     value={contactForm.name}
                     onChange={handleContactInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="Your full name"
+                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="John Smith"
                   />
                 </div>
                 <div>
@@ -180,7 +180,7 @@ export const Contact = () => {
                     value={contactForm.email}
                     onChange={handleContactInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
+                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -196,11 +196,11 @@ export const Contact = () => {
                     name="phone"
                     value={contactForm.phone}
                     onChange={handleContactInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
+                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="(555) 123-4567"
                   />
                 </div>
-                <div>
+                <div className="relative flex-col">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
                     Subject *
                   </label>
@@ -209,7 +209,7 @@ export const Contact = () => {
                     value={contactForm.subject}
                     onChange={handleContactInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
+                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
                     <option value="">Select a subject</option>
                     <option value="booking">Booking Inquiry</option>
@@ -221,6 +221,9 @@ export const Contact = () => {
                     </option>
                     <option value="other">Other</option>
                   </select>
+                  <div className="absolute top-[2.8rem] right-0 flex items-center pr-3 pointer-events-none">
+                    <ChevronDown className="w-4 h-4 text-gray-500" />
+                  </div>
                 </div>
               </div>
 
@@ -234,7 +237,7 @@ export const Contact = () => {
                   onChange={handleContactInputChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200 resize-none"
+                  className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Tell us about your speedboat needs, preferred dates, or any questions you have..."
                 ></textarea>
               </div>

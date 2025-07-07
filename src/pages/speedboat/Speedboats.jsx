@@ -7,15 +7,13 @@ import { Contact } from "../home/Contact";
 import { CTA } from "../../components/CTA";
 import { useState } from "react";
 import { SpeedBoatCard } from "../../components/SpeedBoatCard";
+import { NoResultsFound } from "../../components/NoResultsFound";
 
 export const Speedboats = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const searchQueryParms = searchParams.get("search") || "";
   const typeFilterParams = searchParams.get("type") || "select type";
   const sortFilterParams = searchParams.get("sort") || "sort";
-
-  // Image loaded?
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   // Load more items
   const loadLimit = 9;
@@ -24,7 +22,7 @@ export const Speedboats = () => {
   // console.log("typeFilterParams", typeFilterParams);
 
   const boatTypes = [...new Set(speedboats.map((boat) => boat.type))];
-  console.log("boatTypes", boatTypes);
+  // console.log("boatTypes", boatTypes);
 
   // Search input
   const handleSearchChange = (value) => {
@@ -139,7 +137,7 @@ export const Speedboats = () => {
               {/* Search input */}
               <div className="flex-1 md:flex-[1.6_1-0%] relative">
                 <div className="relative w-full">
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <div className="absolute top-4 right-4 flex items-center pl-3 pointer-events-none">
                     <FaMagnifyingGlass className="w-4 h-4 text-gray-500" />
                   </div>
 
@@ -152,7 +150,7 @@ export const Speedboats = () => {
                       resetItemDisplay();
                     }}
                     placeholder="Search speedboats..."
-                    className="w-full bg-white border border-gray-200 text-gray-700 py-2 pl-10 pr-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>
               </div>
@@ -166,7 +164,7 @@ export const Speedboats = () => {
                       handleTypeFilter(e.target.value);
                       resetItemDisplay();
                     }}
-                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 py-2 pl-2 pr-8 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
                     <option value="select type">Select Type</option>
                     {boatTypes.map((item, index) => {
@@ -189,7 +187,7 @@ export const Speedboats = () => {
                       handleSortFilter(e.target.value);
                       resetItemDisplay();
                     }}
-                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 py-2 pl-2 pr-8 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full appearance-none bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
                     <option value="sort">Sort</option>
                     <option value="name-ascending">Name: Ascending</option>
@@ -219,18 +217,15 @@ export const Speedboats = () => {
         {/* Speedboats */}
         <section className="py-12 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {speedboatDisplay.map((boat, index) => {
-                return (
-                  <SpeedBoatCard
-                    key={index}
-                    boat={boat}
-                    isImageLoaded={isImageLoaded}
-                    setIsImageLoaded={setIsImageLoaded}
-                  />
-                );
-              })}
-            </div>
+            {speedboatDisplay.length === 0 ? (
+              <NoResultsFound />
+            ) : (
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {speedboatDisplay.map((boat, index) => {
+                  return <SpeedBoatCard key={index} boat={boat} />;
+                })}
+              </div>
+            )}
             {hasMoreItems ? (
               <div className="w-full inline-flex items-center justify-center mt-10">
                 <button

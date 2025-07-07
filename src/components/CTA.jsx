@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const CTA = () => {
   return (
-    <section className="relative py-24 bg-gradient-to-r from-primary-900 via-ocean-800 to-primary-900 text-white overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-r from-primary-900 via-ocean-800 to-primary-900 text-white overflow-hidden sm:px-4">
       <div className="absolute inset-0 bg-black/20"></div>
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"

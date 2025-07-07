@@ -3,8 +3,21 @@ import { PageHeading } from "../../components/PageHeading";
 import { stats } from "../../data/system";
 import { GiBoatPropeller, GiSailboat } from "react-icons/gi";
 import { Team } from "./Team";
+import { CTA2 } from "../../components/CTA2";
+import { useEffect, useState } from "react";
+import { FaSpinner } from "react-icons/fa";
 
 export const About = () => {
+  const [isImageLoaded, setIsImageLoaded] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsImageLoaded(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="animate-fade-in">
       {" "}
@@ -15,7 +28,7 @@ export const About = () => {
         }
       />
       {/* Our Story */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white sm:px-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -63,12 +76,16 @@ export const About = () => {
                 telling.
               </p>
             </div>
-            <div className="relative">
-              <img
-                src="https://res.cloudinary.com/davjgeymf/image/upload/v1751642985/creator_un2qzg.png"
-                alt="Speedboat on ocean"
-                className="rounded-lg"
-              />
+            <div className="relative flex justify-center items-center min-h-[400px]">
+              {isImageLoaded ? (
+                <FaSpinner className="animate-spin" />
+              ) : (
+                <img
+                  src="https://res.cloudinary.com/davjgeymf/image/upload/v1751642985/creator_un2qzg.png"
+                  alt="Speedboat on ocean"
+                  className="rounded-lg sm:w-[80%] md4:w-[60%] md7:w-full"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -84,7 +101,7 @@ export const About = () => {
               Our commitment to excellence in numbers
             </p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 gap-8 md4:grid-cols-4">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-5xl font-bold text-primary-600 mb-2">
@@ -163,30 +180,7 @@ export const About = () => {
       </section>
       {/* Team */}
       <Team />
-      {/* Contact CTA */}
-      <section className="py-20 bg-gradient-to-r from-primary-800 to-ocean-700 text-white">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Ready to Set Sail?</h2>
-          <p className="text-xl mb-8 text-gray-200">
-            Join thousands of satisfied customers who trust AquaSpeed for their
-            ocean adventures.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+15551234567"
-              className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200"
-            >
-              Call Us Today
-            </a>
-            <a
-              href="mailto:info@aquaspeed.com"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-900 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-300"
-            >
-              Send Email
-            </a>
-          </div>
-        </div>
-      </section>
+      <CTA2 />
     </div>
   );
 };

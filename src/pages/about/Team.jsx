@@ -6,38 +6,53 @@ const teamMembers = users.filter((user) => user.role !== "user");
 // console.log("teamMembers ", teamMembers);
 
 export const Team = () => {
-  const [isImageLoaded, setIsImageLoaded] = useState();
+  const [isImageLoaded, setIsImageLoaded] = useState({});
+
+  const handleImageLoad = (index) => {
+    setIsImageLoaded((prev) => ({ ...prev, [index]: true }));
+  };
+
+  // Loading image test for 2 seconds
+  // const handleImageLoad = (index) => {
+  //   setTimeout(() => {
+  //     setIsImageLoaded((prev) => ({ ...prev, [index]: true }));
+  //   }, 2000);
+  // };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 sm:px-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Meet Our Team
+            Meet Our <span className="text-accent-500">Team</span>
           </h2>
           <p className="text-xl text-gray-600">
-            The passionate professionals behind AquaSpeed
+            The passionate professionals behind Caldwell Boats
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md5:grid-cols-3">
           {teamMembers.map((member, index) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              {!isImageLoaded && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <FaSpinner className="w-8 h-8 text-gray-500 animate-spin" />
-                </div>
-              )}
-              <img
-                src={member.image}
-                alt={member.name}
-                className={`w-full h-[36rem] object-cover transition-opacity duration-500 ${
-                  isImageLoaded ? "opacity-100" : "opacity-0"
-                }`}
-                onLoad={() => setIsImageLoaded(true)}
-              />
+              <div className="relative h-[36rem] bg-slate-200 overflow-hidden">
+                {!isImageLoaded[index] && (
+                  <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/60">
+                    <FaSpinner className="w-8 h-8 text-gray-500 animate-spin" />
+                  </div>
+                )}
+
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  onLoad={() => handleImageLoad(index)}
+                  className={`w-full h-full object-cover transition-opacity duration-500 ${
+                    isImageLoaded[index] ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              </div>
+
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {member.name}

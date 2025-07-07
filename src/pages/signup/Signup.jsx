@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 export const Signup = () => {
@@ -72,16 +73,13 @@ export const Signup = () => {
 
     setIsLoading(true);
 
-    // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 2000));
-
     setIsLoading(false);
-    // In a real app, you would handle registration here
-    alert("Account created successfully! (Demo)");
+    toast.success("Account created successfully! (Demo)");
   };
 
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in px-10">
       <div className="min-h-screen bg-gray-50 flex flex-col py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">

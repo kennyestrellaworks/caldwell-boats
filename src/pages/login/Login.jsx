@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 export const Login = () => {
   const [formData, setFormData] = useState({
@@ -20,16 +21,14 @@ export const Login = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    // Simulate API call
+    // Not real loading
     await new Promise((resolve) => setTimeout(resolve, 1500));
-
     setIsLoading(false);
-    // In a real app, you would handle authentication here
-    alert("Login successful! (Demo)");
+    toast.success("Login successfull!");
   };
 
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in px-10">
       <div className="min-h-screen bg-gray-50 flex flex-col py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">

@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import { navLinks } from "../data/system";
 import { useState } from "react";
@@ -6,8 +6,6 @@ import { Menu, X } from "lucide-react";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-  const isActive = (path) => location.pathname === path;
 
   // console.log("location", location);
   // console.log("navLinks", navLinks);
@@ -24,17 +22,19 @@ export const Navbar = () => {
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link, index) => {
               return (
-                <Link
+                <NavLink
                   key={index}
                   to={link.path}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-                    isActive(link.path)
-                      ? "text-primary-600 bg-primary-50"
-                      : "text-gray-700 hover:text-primary-600 hover:bg-primary-50"
-                  }`}
+                  className={({ isActive }) =>
+                    `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      isActive
+                        ? "text-primary-600 bg-primary-50"
+                        : "text-gray-700 hover:text-primary-600 hover:bg-primary-50"
+                    }`
+                  }
                 >
                   {link.label}
-                </Link>
+                </NavLink>
               );
             })}
           </div>
@@ -66,20 +66,34 @@ export const Navbar = () => {
         {/* Mobile navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
+            <div className="flex flex-col relative px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+              {navLinks.map((link, index) => (
+                <NavLink
+                  key={index}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                    isActive(link.path)
-                      ? "text-primary-600 bg-primary-50"
-                      : "text-gray-700 hover:text-primary-600 hover:bg-primary-50"
-                  }`}
+                  className={({ isActive }) =>
+                    `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      isActive
+                        ? "text-primary-600 bg-primary-50"
+                        : "text-gray-700 hover:text-primary-600 hover:bg-primary-50"
+                    }`
+                  }
                 >
                   {link.label}
-                </Link>
+                </NavLink>
+                // <Link
+                //   key={link.path}
+                //   to={link.path}
+                //   onClick={() => setIsMenuOpen(false)}
+                //   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                //     isActive(link.path)
+                //       ? "text-primary-600 bg-primary-50"
+                //       : "text-gray-700 hover:text-primary-600 hover:bg-primary-50"
+                //   }`}
+                // >
+                //   {link.label}
+                // </Link>
               ))}
               {/* Mobile login & signup */}
               <div className="flex flex-col space-y-2 pt-4 border-t">

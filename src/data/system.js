@@ -4,6 +4,7 @@ export const navLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
   { path: "/speedboats", label: "Speedboats" },
+  { path: "/profile", label: "Profile" },
 ];
 
 export const stats = [
@@ -11,6 +12,31 @@ export const stats = [
   { number: "30+", label: "Premium Speedboats" },
   { number: "1000+", label: "Happy Customers" },
   { number: "24/7", label: "Customer Support" },
+];
+
+export const timeSlots = [
+  "09:00",
+  "10:00",
+  "11:00",
+  "12:00",
+  "13:00",
+  "14:00",
+  "15:00",
+  "16:00",
+];
+
+export const locations = [
+  { value: "miami-beach", label: "Miami Beach Marina" },
+  { value: "key-biscayne", label: "Key Biscayne Harbor" },
+  { value: "coconut-grove", label: "Coconut Grove Marina" },
+  { value: "fort-lauderdale", label: "Fort Lauderdale Port" },
+];
+
+export const durations = [
+  { value: "2", label: "2 Hours", multiplier: 0.3 },
+  { value: "4", label: "4 Hours", multiplier: 0.5 },
+  { value: "6", label: "6 Hours", multiplier: 0.7 },
+  { value: "8", label: "Full Day (8 Hours)", multiplier: 1 },
 ];
 
 export const features = [

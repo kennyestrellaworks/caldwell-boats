@@ -84,11 +84,7 @@ export default {
           900: "#0c4a6e",
         },
       },
-      animation: {
-        "fade-in": "fadeIn 0.5s ease-in-out",
-        "slide-up": "slideUp 0.5s ease-out",
-        "bounce-gentle": "bounceGentle 2s infinite",
-      },
+
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },
@@ -102,8 +98,24 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-5px)" },
         },
+        slideLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        slideRight: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        "fade-in": "fadeIn 0.5s ease-in-out",
+        "slide-up": "slideUp 0.5s ease-out",
+        "bounce-gentle": "bounceGentle 2s infinite",
+        "slide-left": "slideLeft 0.4s ease-out",
+        "slide-right": "slideRight 0.4s ease-out",
       },
     },
   },
   plugins: [],
+  safelist: ["animate-slideRight", "animate-slideLeft"],
 };

@@ -1,7 +1,7 @@
-import { speedboats } from "../../data/speedBoats";
+import { speedboats } from "../data/speedBoats";
 import { Link } from "react-router-dom";
 import { Sailboat } from "lucide-react";
-import { SpeedBoatCard } from "../../components/SpeedBoatCard";
+import { SpeedBoatCard } from "./SpeedBoatCard";
 import { useState } from "react";
 
 export const FeaturedBoats = () => {
@@ -11,7 +11,7 @@ export const FeaturedBoats = () => {
 
   // console.log("featuredBoats", featuredBoats);
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white sm:px-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
@@ -23,7 +23,7 @@ export const FeaturedBoats = () => {
           </p>
         </div>
         {/* Featured boats */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm3:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredBoats.map((boat, index) => {
             return (
               <SpeedBoatCard

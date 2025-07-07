@@ -2,7 +2,7 @@ import { testimonials } from "../../data/system";
 
 export const Testimonials = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary-50 to-ocean-50 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-primary-50 to-ocean-50 relative overflow-hidden sm:px-4">
       <div className="absolute inset-0 bg-white/60"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
@@ -39,11 +39,11 @@ export const Testimonials = () => {
               <blockquote className="text-gray-700 mb-6 text-lg leading-relaxed italic">
                 "{testimonial.comment}"
               </blockquote>
-              <div className="flex items-center">
+              <div className="flex items-start md:flex-col md:items-center md1:items-start">
                 <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-ocean-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                   {testimonial.name.charAt(0)}
                 </div>
-                <div>
+                <div className="flex flex-col md:items-center md1:items-start">
                   <p className="font-bold text-gray-900 text-lg">
                     {testimonial.name}
                   </p>

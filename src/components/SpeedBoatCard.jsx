@@ -1,23 +1,21 @@
 import { Calendar, Eye } from "lucide-react";
 import { FaSpinner } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { ImageLoadSpinner } from "./ImageLoadSpinner";
 
-export const SpeedBoatCard = ({ boat, isImageLoaded, setIsImageLoaded }) => {
+export const SpeedBoatCard = ({ boat, index }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+    <div
+      key={index}
+      className="relative bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow"
+    >
       <div className="relative w-full h-64 bg-gray-200 overflow-hidden flex items-center justify-center">
-        {!isImageLoaded && (
-          <div className="absolute inset-0 flex items-center justify-center z-10">
-            <FaSpinner className="text-gray-500 animate-spin text-3xl" />
-          </div>
-        )}
-        <img
-          src={boat.image}
+        <ImageLoadSpinner
+          src={boat.gallery[0]}
           alt={boat.name}
-          className={`w-full h-64 object-cover transition-opacity duration-500 ${
-            isImageLoaded ? "opacity-100" : "opacity-0"
-          }`}
-          onLoad={() => setIsImageLoaded(true)}
+          classNames={
+            "h-full w-full transition-transform duration-300 hover:scale-105 cursor-pointer"
+          }
         />
         <div className="absolute top-4 left-4 bg-accent-500/70 text-white px-3 py-1 font-regular rounded-full text-sm">
           {boat.type}
@@ -26,26 +24,27 @@ export const SpeedBoatCard = ({ boat, isImageLoaded, setIsImageLoaded }) => {
           ${boat.price}/day
         </div>
       </div>
-      <div className="p-6">
+      <div className="relative w-full p-6 h-[27rem] sm:h-[24rem] sm3:h-[33rem] md:h-[31rem] md2:h-[28rem] md3:h-[27rem] md6:h-[25rem] md7:h-[31rem] md10:h-[30rem] xl:h-[27rem]">
         <h3 className="text-xl font-semibold mb-2">{boat.name}</h3>
-        <p className="text-gray-600 mb-4 h-[100px]">
+        <p className="text-gray-600 mb-4 h-[5rem] sm:h-[4.5rem] sm3:h-[7rem] md2:h-[6rem] md6:h-[5rem] md7:h-[7rem] md10:h-[5.8rem]">
           {boat.description.split("\n\n")[0].length > 100
             ? boat.description.split("\n\n")[0].substring(0, 100) + "..."
             : boat.description.split("\n\n")[0]}
         </p>
-        <div className="grid grid-cols-2 gap-[10px] mb-4 text-sm text-gray-700">
-          <div>
-            <span className="font-medium">Length:</span> {boat.length}
+        <div className="grid grid-cols-2 mb-4 text-sm text-gray-700 sm3:gap-4">
+          <div className="sm3:flex sm3:flex-col md2:flex-row md7:flex-col xl:flex-row">
+            <span className="font-medium md:mr-2">Length:</span> {boat.length}
           </div>
-          <div>
-            <span className="font-medium">Capacity:</span> {boat.capacity}{" "}
-            people
+          <div className="sm3:flex sm3:flex-col md2:flex-row md7:flex-col xl:flex-row">
+            <span className="font-medium md:mr-2">Capacity:</span>{" "}
+            {boat.capacity} people
           </div>
-          <div>
-            <span className="font-medium">Max Speed:</span> {boat.speed}
+          <div className="sm3:flex sm3:flex-col md2:flex-row md7:flex-col xl:flex-row">
+            <span className="font-medium md1:mr-2">Max Speed:</span>{" "}
+            {boat.speed}
           </div>
-          <div>
-            <span className="font-medium">Price:</span>{" "}
+          <div className="sm3:flex sm3:flex-col md2:flex-row md7:flex-col xl:flex-row">
+            <span className="font-medium md1:mr-2">Price:</span>{" "}
             <span className="text-primary-600 font-bold">${boat.price}</span>
           </div>
         </div>
@@ -67,21 +66,23 @@ export const SpeedBoatCard = ({ boat, isImageLoaded, setIsImageLoaded }) => {
             </span>
           </div>
         </div>
-        <div className="flex flex-row gap-2">
-          <Link
-            to={`/speedboats/${boat.id}`}
-            className="flex flex-1 items-center justify-center bg-primary-50 hover:bg-primary-600 text-primary-400 hover:text-white py-3 rounded-lg text-sm font-regular transition-colors duration-200"
-          >
-            <Eye className="h-[16px]" />
-            View Details
-          </Link>
-          <Link
-            to="speedboats"
-            className="flex flex-1 items-center justify-center bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg text-sm font-regular transition-colors duration-200"
-          >
-            <Calendar className="h-[16px]" />
-            Book Now
-          </Link>
+        <div className="absolute w-full flex left-0 bottom-0">
+          <div className="flex w-full gap-2 px-6 pb-6">
+            <Link
+              to={`/speedboats/${boat.id}`}
+              className="flex flex-1 items-center justify-center bg-primary-50 hover:bg-primary-600 text-primary-400 hover:text-white py-3 rounded-lg text-sm font-regular transition-colors duration-200"
+            >
+              <Eye className="h-[16px]" />
+              View Details
+            </Link>
+            <Link
+              to={`/speedboats/${boat.id}/booking`}
+              className="flex flex-1 items-center justify-center bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg text-sm font-regular transition-colors duration-200"
+            >
+              <Calendar className="h-[16px]" />
+              Book Now
+            </Link>
+          </div>
         </div>
       </div>
     </div>
