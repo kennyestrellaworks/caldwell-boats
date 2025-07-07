@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { HiMiniCalendarDateRange } from "react-icons/hi2";
 import { durations, locations, timeSlots } from "../../data/system";
 import { ChevronDown, Clock, MapPin, Users } from "lucide-react";
-import { ImageGalleryWIthSpinner } from "../../components/ImageGalleryWIthSpinner";
 import { Slider } from "../../components/Slider";
 import toast from "react-hot-toast";
 import { ImageLoadSpinner } from "../../components/ImageLoadSpinner";
