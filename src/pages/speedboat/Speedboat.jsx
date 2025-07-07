@@ -72,41 +72,43 @@ export const Speedboat = () => {
       {/* ****** */}
       <div className="mt-[4rem]">
         <section className="relative bg-gray-50 max-w-7xl mx-auto p-10">
-          <div className="relative w-full grid grid-cols-3 gap-2">
-            <div className="relative col-span-2 h-[400px] bg-gray-200 overflow-hidden rounded-lg">
-              <div className="relative w-full h-full overflow-hidden">
+          <div className="relative flex flex-col w-full gap-2 md:flex-row">
+            <div className="relative h-full bg-gray-200 overflow-hidden rounded-lg md3:w-[60%]">
+              <div className="relative w-full h-full">
                 <ImageLoadSpinner
                   src={boat.gallery[0]}
                   alt={boat.name}
                   classNames={
-                    "transition-transform duration-300 hover:scale-105 cursor-pointer"
+                    "transition-transform rounded-lg duration-300 hover:scale-105 cursor-pointer"
                   }
                   onClick={() => openSlider(0)}
                 />
               </div>
             </div>
-            <div className="grid grid-cols-2 grid-rows-2 gap-2">
-              {boat.gallery.slice(1).map((image, index) => (
-                <div
-                  key={index}
-                  className="relative w-full h-full overflow-hidden rounded-lg"
-                >
-                  <ImageLoadSpinner
-                    src={image}
-                    alt={boat.name}
-                    classNames={
-                      "w-full h-full transition-transform duration-300 hover:scale-105 cursor-pointer"
-                    }
-                    onClick={() => openSlider(index + 1)}
-                  />
-                </div>
-              ))}
+            <div className="flex w-full md3:w-[40%]">
+              <div className="w-full grid grid-cols-2 gap-2 sm1:grid-cols-4 md:grid-cols-2">
+                {boat.gallery.slice(1).map((image, index) => (
+                  <div
+                    key={index}
+                    className="relative w-full h-full overflow-hidden rounded-lg"
+                  >
+                    <ImageLoadSpinner
+                      src={image}
+                      alt={boat.name}
+                      classNames={
+                        "w-full h-full rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
+                      }
+                      onClick={() => openSlider(index + 1)}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           <div className="my-10">
             {/* ********  */}
-            <div className="flex flex-row justify-between items-start">
-              <div className="flex flex-col w-[80%]">
+            <div className="flex flex-col justify-between items-start">
+              <div className="flex flex-col w-full">
                 <h2 className="text-3xl font-bold text-blue-600 mb-2">
                   {boat.name}
                 </h2>
@@ -128,46 +130,48 @@ export const Speedboat = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex gap-8 mt-10">
+            <div className="flex flex-col gap-8 mt-10">
               {/* Specifications */}
-              <div className="flex flex-1">
+              <div className="flex flex-col">
                 <div className="flex w-full items-start">
-                  <div className="grid grid-cols-2 gap-6 items-start  w-full md:grid-cols-4">
-                    <div>
+                  <div className="grid grid-cols-2 gap-6 items-start w-full">
+                    <div className="flex gap-3">
                       <div className="bg-accent-100 rounded-full w-12 h-12 flex items-center justify-center mb-2">
                         <BiRuler className="h-6 w-6 text-accent-600" />
                       </div>
-                      <div className="font-bold text-xl text-gray-900">
-                        {boat.length}
+                      <div className="text-xl text-gray-900">
+                        <p className="font-bold">{boat.length}</p>
+                        <p className="text-sm text-gray-600">Length</p>
                       </div>
-                      <div className="text-sm text-gray-600">Length</div>
                     </div>
-                    <div>
+                    <div className="flex gap-3">
                       <div className="bg-accent-100 rounded-full w-12 h-12 flex items-center justify-center mb-2">
                         <Users2 className="h-6 w-6 text-accent-600" />
                       </div>
-                      <div className="font-bold text-xl text-gray-900">
-                        {boat.capacity} People
+                      <div className="text-xl text-gray-900">
+                        <p className="font-bold">{boat.capacity} People</p>
+                        <p className="text-sm text-gray-600">Capacity</p>
                       </div>
-                      <div className="text-sm text-gray-600">Capacity</div>
                     </div>
-                    <div>
+
+                    <div className="flex gap-3">
                       <div className="bg-accent-100 rounded-full w-12 h-12 flex items-center justify-center mb-2">
                         <Gauge className="h-6 w-6 text-accent-600" />
                       </div>
-                      <div className="font-bold text-xl text-gray-900">
-                        {boat.speed}
+                      <div className="text-xl text-gray-900">
+                        <p className="font-bold">{boat.speed}</p>
+                        <p className="text-sm text-gray-600">Max Speed</p>
                       </div>
-                      <div className="text-sm text-gray-600">Max Speed</div>
                     </div>
-                    <div>
+
+                    <div className="flex gap-3">
                       <div className="bg-accent-100 rounded-full w-12 h-12 flex items-center justify-center mb-2">
                         <Calendar className="h-6 w-6 text-accent-600" />
                       </div>
-                      <div className="font-bold text-xl text-gray-900">
-                        ${boat.price}
+                      <div className="text-xl text-gray-900">
+                        <p className="font-bold">{boat.price}</p>
+                        <p className="text-sm text-gray-600">Per Day</p>
                       </div>
-                      <div className="text-sm text-gray-600">Per Day</div>
                     </div>
                   </div>
                 </div>
@@ -181,10 +185,12 @@ export const Speedboat = () => {
                   {boat.features.map((feature, index) => (
                     <div
                       key={index}
-                      className="flex items-center bg-gray-200/40 rounded-lg px-3 py-2"
+                      className="flex items-start bg-gray-200/40 rounded-lg p-3"
                     >
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                      <p className="text-md text-gray-700">{feature}</p>
+                      <div className="flex mt-2 w-2 h-2 bg-blue-600 rounded-full"></div>
+                      <div className="flex-1 ml-2">
+                        <p className="text-md text-gray-700">{feature}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
