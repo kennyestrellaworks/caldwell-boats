@@ -19,7 +19,7 @@ export const Navbar = () => {
             <img className="h-16" src={logo} alt="caldwell-boats-logo" />
           </Link>
           {/* Desktop navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-2">
             {navLinks.map((link, index) => {
               return (
                 <NavLink
