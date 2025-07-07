@@ -48,6 +48,7 @@ export const Login = () => {
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow-xl rounded-lg sm:px-10">
             <form className="space-y-6" onSubmit={handleSubmit}>
+              <p className="text-sm">This is demo login form only</p>
               <div>
                 <label
                   htmlFor="email"

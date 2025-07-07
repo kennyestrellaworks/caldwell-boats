@@ -99,6 +99,7 @@ export const Signup = () => {
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow-xl rounded-lg sm:px-10">
             <form className="space-y-6" onSubmit={handleSubmit}>
+              <p className="text-sm">This is demo signup form only</p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label
