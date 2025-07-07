@@ -7,6 +7,7 @@ import { ChevronDown, Clock, MapPin, Users } from "lucide-react";
 import { Slider } from "../../components/Slider";
 import toast from "react-hot-toast";
 import { ImageLoadSpinner } from "../../components/ImageLoadSpinner";
+import { SpeedboatGallery } from "../../components/SpeedboatGallery";
 
 export const Booking = () => {
   const [step, setStep] = useState(1);
@@ -106,61 +107,13 @@ export const Booking = () => {
       {/* Slider component */}
       <div className="my-[4rem]">
         <section className="relative bg-gray-50 max-w-7xl mx-auto p-10">
-          <div className="flex flex-row gap-8">
+          <div className="flex flex-col gap-8">
             {/* **********  */}
-            <div className="flex w-[45%]">
-              <div className="flex items-start">
-                <div className="relative w-full grid grid-cols-1">
-                  <div className="relative col-span-2 h-[15rem] bg-gray-200 overflow-hidden rounded-lg">
-                    {/* <ImageGalleryWIthSpinner
-                      src={boat.gallery[0]}
-                      alt="Featured"
-                      containerClass="h-full col-span-2 transition-transform duration-300 hover:scale-105 cursor-pointer"
-                      onClick={() => openSlider(0)}
-                    /> */}
-                    <div className="relative w-full h-full overflow-hidden">
-                      <ImageLoadSpinner
-                        src={boat.gallery[0]}
-                        alt={boat.name}
-                        classNames={
-                          "transition-transform duration-300 hover:scale-105 cursor-pointer"
-                        }
-                        onClick={() => openSlider(0)}
-                      />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-2 grid-rows-2 gap-2 mt-2">
-                    {boat.gallery.slice(1).map((image, index) => (
-                      // <ImageGalleryWIthSpinner
-                      //   key={index}
-                      //   src={image}
-                      //   alt={`Thumbnail ${index + 1}`}
-                      //   containerClass="aspect-square cursor-pointer"
-                      //   className="transition-transform duration-300 hover:scale-105"
-                      //   onClick={() => openSlider(0)}
-                      // />
-                      <div
-                        key={index}
-                        className="relative w-full h-full overflow-hidden rounded-lg"
-                      >
-                        <ImageLoadSpinner
-                          src={image}
-                          alt={boat.name}
-                          classNames={
-                            "transition-transform duration-300 hover:scale-105 cursor-pointer"
-                          }
-                          onClick={() => openSlider(index + 1)}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+            <SpeedboatGallery boat={boat} openSlider={openSlider} />
             {/* **********  */}
-            <div className="flex w-[65%]">
+            <div className="flex w-full">
               <div className="flex flex-col w-full">
-                <div className="px-6 py-4 bg-gray-50 w-full">
+                <div className="bg-gray-50 w-full">
                   <div className="flex flex-col">
                     <h1 className="text-3xl font-bold mb-2">
                       Enjoy Your Vacation on the Waves
@@ -210,11 +163,11 @@ export const Booking = () => {
                   </div>
                 </div>
                 {/* Form  */}
-                <form onSubmit={handleSubmit} className="p-6">
+                <form onSubmit={handleSubmit} className="mt-10">
                   {step === 1 ? (
                     <div className="space-y-6">
                       {/* Date and Time */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 gap-4">
                         <div className="relative flex-col">
                           <label className="block text-sm font-medium text-gray-700 mb-2">
                             {/* <Calendar className="inline h-4 w-4 mr-1" /> */}
