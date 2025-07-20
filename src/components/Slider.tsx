@@ -10,7 +10,7 @@ interface SliderProps {
   onNext: () => void;
   onPrev: () => void;
   slideDirection: SlideDirection;
-  setSlideDirection: (dir: SlideDirection) => void;
+  setSlideDirection: React.Dispatch<React.SetStateAction<SlideDirection>>;
 }
 
 export const Slider = ({
