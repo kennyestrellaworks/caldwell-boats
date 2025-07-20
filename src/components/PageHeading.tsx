@@ -1,3 +1,5 @@
+import * as React from "react";
+
 type PageHeadingProps = {
   headingTitle: string;
   headingParagraph: string;
