@@ -151,7 +151,7 @@ export const Booking: FC = () => {
           onClose={closeSlider}
           onNext={goToNext}
           onPrev={goToPrev}
-          slideDirection={slideDirection}
+          slideDirection={slideDirection || "slideRight"}
           setSlideDirection={setSlideDirection}
         />
       )}

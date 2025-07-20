@@ -19,8 +19,9 @@ export const Speedboat = () => {
   // Slider component
   const [isSliderOpen, setIsSliderOpen] = useState(false);
   const [slideDirection, setSlideDirection] = useState<
-    "slideLeft" | "slideRight" | undefined
-  >();
+    "slideLeft" | "slideRight"
+  >("slideRight");
+
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   // Disable scroll when slider is open
@@ -71,7 +72,7 @@ export const Speedboat = () => {
           onClose={closeSlider}
           onNext={goToNext}
           onPrev={goToPrev}
-          slideDirection={slideDirection}
+          slideDirection={slideDirection || "slideRight"}
           setSlideDirection={setSlideDirection}
         />
       )}

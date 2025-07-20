@@ -13,7 +13,7 @@ interface SliderProps {
   setSlideDirection: React.Dispatch<React.SetStateAction<SlideDirection>>;
 }
 
-export const Slider = ({
+export const Slider: React.FC<SliderProps> = ({
   images,
   selectedIndex,
   onClose,
@@ -21,7 +21,7 @@ export const Slider = ({
   onPrev,
   slideDirection,
   setSlideDirection,
-}: SliderProps) => {
+}) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
