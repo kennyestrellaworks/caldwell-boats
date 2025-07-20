@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 type PageHeadingProps = {
   headingTitle: string;
   headingParagraph: string;
