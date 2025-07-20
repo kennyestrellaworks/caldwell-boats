@@ -18,7 +18,7 @@ A modern, responsive speedboat rental website built with **React**, **Vite**, an
 
 ## 🛠️ Technogies
 
-<img width="22px" src="react-original.svg"> <img width="22px" src="javascript-original.svg"> <img width="22px" src="html5-plain.svg"><img width="22px" src="tailwindcss.svg">
+<img width="22px" src="react-original.svg"> <img width="22px" src="typescript-icon.svg"> <img width="22px" src="javascript-original.svg"> <img width="22px" src="html5-plain.svg"><img width="22px" src="tailwindcss.svg">
 
 ## 🛠️ Tools
 
