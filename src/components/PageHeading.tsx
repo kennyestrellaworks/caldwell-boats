@@ -5,10 +5,10 @@ type PageHeadingProps = {
   headingParagraph: string;
 };
 
-export const PageHeading = ({
+export const PageHeading: React.FC<PageHeadingProps> = ({
   headingTitle,
   headingParagraph,
-}: PageHeadingProps): JSX.Element => {
+}) => {
   return (
     <section className="relative py-20 bg-gradient-to-r from-primary-800 to-ocean-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
