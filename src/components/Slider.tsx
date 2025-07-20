@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
 
-type SlideDirection = "slideLeft" | "slideRight" | "" | undefined;
+type SlideDirection = "slideLeft" | "slideRight" | "";
 
 interface SliderProps {
   images: string[];
@@ -77,7 +77,7 @@ export const Slider: React.FC<SliderProps> = ({
           }`}
           onLoad={() => {
             setLoaded(true);
-            setTimeout(() => setSlideDirection(""), 50);
+            setTimeout(() => setSlideDirection("slideRight"), 50);
           }}
         />
       </div>
