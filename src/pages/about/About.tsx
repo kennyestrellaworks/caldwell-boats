@@ -10,7 +10,6 @@ import { ImageLoadSpinner } from "../../components/ImageLoadSpinner";
 export const About = () => {
   return (
     <div className="animate-fade-in">
-      {" "}
       <PageHeading
         headingTitle={"About Us"}
         headingParagraph={
