@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 type PageHeadingProps = {
   headingTitle: string;
   headingParagraph: string;
@@ -8,7 +6,7 @@ type PageHeadingProps = {
 export const PageHeading = ({
   headingTitle,
   headingParagraph,
-}: PageHeadingProps): JSX.Element => {
+}: PageHeadingProps) => {
   return (
     <section className="relative py-20 bg-gradient-to-r from-primary-800 to-ocean-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
