@@ -1,6 +1,18 @@
 import { useEffect, useState } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
 
+type SlideDirection = "slideLeft" | "slideRight" | "";
+
+interface SliderProps {
+  images: string[];
+  selectedIndex: number;
+  onClose: () => void;
+  onNext: () => void;
+  onPrev: () => void;
+  slideDirection: SlideDirection;
+  setSlideDirection: (dir: SlideDirection) => void;
+}
+
 export const Slider = ({
   images,
   selectedIndex,
@@ -9,7 +21,7 @@ export const Slider = ({
   onPrev,
   slideDirection,
   setSlideDirection,
-}) => {
+}: SliderProps) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -17,7 +29,7 @@ export const Slider = ({
   }, [selectedIndex]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
+    <div className="fixed inset-0 z-[6000] bg-black bg-opacity-90 flex items-center justify-center">
       {/* Close Button */}
       <button
         onClick={onClose}
