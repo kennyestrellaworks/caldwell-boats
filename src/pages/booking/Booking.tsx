@@ -46,8 +46,8 @@ export const Booking: FC = () => {
   // Slider component
   const [isSliderOpen, setIsSliderOpen] = useState(false);
   const [slideDirection, setSlideDirection] = useState<
-    "slideLeft" | "slideRight" | undefined
-  >();
+    "slideLeft" | "slideRight"
+  >("slideRight");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   // Disable scroll when slider is open
@@ -151,7 +151,7 @@ export const Booking: FC = () => {
           onClose={closeSlider}
           onNext={goToNext}
           onPrev={goToPrev}
-          slideDirection={slideDirection || "slideRight"}
+          slideDirection={slideDirection}
           setSlideDirection={setSlideDirection}
         />
       )}
