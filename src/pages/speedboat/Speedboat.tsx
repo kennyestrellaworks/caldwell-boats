@@ -10,6 +10,8 @@ import { Slider } from "../../components/Slider";
 import { SpeedboatGallery } from "../../components/SpeedboatGallery";
 import { FaGauge } from "react-icons/fa6";
 
+type SlideDirection = "slideLeft" | "slideRight" | "";
+
 export const Speedboat = () => {
   const { id } = useParams<{ id: string }>();
   const boat: SpeedboatsType | undefined = speedboats.find(
@@ -18,9 +20,8 @@ export const Speedboat = () => {
 
   // Slider component
   const [isSliderOpen, setIsSliderOpen] = useState(false);
-  const [slideDirection, setSlideDirection] = useState<
-    "slideLeft" | "slideRight"
-  >("slideRight");
+  const [slideDirection, setSlideDirection] =
+    useState<SlideDirection>("slideRight");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   // Disable scroll when slider is open

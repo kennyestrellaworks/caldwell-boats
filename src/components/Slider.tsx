@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
+import type { Dispatch, SetStateAction } from "react";
 
 type SlideDirection = "slideLeft" | "slideRight" | "";
 
@@ -10,7 +11,7 @@ interface SliderProps {
   onNext: () => void;
   onPrev: () => void;
   slideDirection: SlideDirection;
-  setSlideDirection: React.Dispatch<React.SetStateAction<SlideDirection>>;
+  setSlideDirection: Dispatch<SetStateAction<SlideDirection>>;
 }
 
 export const Slider = ({
