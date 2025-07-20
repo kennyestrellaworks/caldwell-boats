@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
 
-type SlideDirection = "slideLeft" | "slideRight" | "";
+type SlideDirection = "slideLeft" | "slideRight" | undefined;
 
 interface SliderProps {
   images: string[];
