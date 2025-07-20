@@ -9,11 +9,6 @@ import { BookingSpeedBoatGallery } from "../../components/BookingSpeedBoatGaller
 import { CgLock } from "react-icons/cg";
 import { BiCalendar, BiChevronDown, BiMapPin, BiUser } from "react-icons/bi";
 
-// type SpeedboatGalleryProps = {
-//   boat: SpeedboatsType;
-//   openSlider: (index: number) => void;
-// };
-
 type FormData = {
   date: string;
   time: string;
