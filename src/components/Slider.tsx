@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BiChevronLeft, BiChevronRight, BiX } from "react-icons/bi";
 
-type SlideDirection = "slideLeft" | "slideRight" | undefined;
+type SlideDirection = "slideLeft" | "slideRight" | "" | undefined;
 
 interface SliderProps {
   images: string[];
@@ -76,7 +76,7 @@ export const Slider = ({
             loaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => {
-            setLoaded(true); // <-- correct local state
+            setLoaded(true);
             setTimeout(() => setSlideDirection(""), 50);
           }}
         />
