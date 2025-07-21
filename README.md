@@ -1,6 +1,6 @@
 # 🚤 Caldwell Boats
 
-A modern, responsive speedboat rental website built with **React**, **Vite**, and **Tailwind CSS**. This project is inspired by an actual client project I worked on last year, re-designed for learning and portfolio purposes. **Caldwell Boats** offers tourists and vacationers an easy way to browse and rent speedboats for their maritime adventures. Designs were made from Figma and Illustrator first.
+A modern, responsive speedboat rental website built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. This project is inspired by an actual client project I worked on last year, re-designed for learning and portfolio purposes. **Caldwell Boats** offers tourists and vacationers an easy way to browse and rent speedboats for their maritime adventures. Designs were made from Figma and Illustrator first.
 
 ## 📸 Preview & Demo
 
@@ -15,6 +15,7 @@ A modern, responsive speedboat rental website built with **React**, **Vite**, an
 - 📖 **Progressive routing** (a simplified variant of pagination)
 - 🎨 **Tailwind CSS** for modern, mobile-friendly, utility-first styling
 - ⚡ Built with **Vite** for faster development and optimized builds
+- 🟦 **TypeScript** for static type checking, enhanced developer experience, and safer code
 
 ## 🛠️ Technogies
 
